@@ -1,0 +1,189 @@
+body {
+	padding: 0; 
+	margin : 0; 
+	box-sizing : border-box;
+	margin-top:150px;		
+}
+
+.texte{
+	 text-align: center; 
+	 font-size : 20px;  
+	 margin-bottom:50px;
+}
+
+.texte h1 {
+		margin-top : 50px;
+        margin-bottom : 40px; 		
+	}
+	 
+	   <!-- /* Question 1*/ -->
+	   
+.texte h2 {
+		margin-top : 80px;
+        margin-bottom : 30px; 		
+	}
+	
+        <!-- /* Boutons des réponses question 1*/ -->
+		
+.produittrois {
+	border-color: #9FB56D;
+    color: black;
+    border-radius : 20px;
+   	border: 2px solid #9FB56D;
+    background-color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.produittrois:hover {
+    background-color: #9FB56D;
+    color: black;
+}
+
+
+.produitquatre {
+    border-color: #9FB56D;
+    color: black;
+    border-radius : 20px;
+   	border: 2px solid #9FB56D;
+    background-color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.produitquatre:hover {
+    background-color: #9FB56D;
+    color: white; 
+}
+
+
+.produitsix {
+    border-color: #9FB56D;
+    color: black;
+    border-radius : 20px;
+   	border: 2px solid #9FB56D;
+    background-color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.produitsix:hover {
+    background-color: #9FB56D;
+    color: white;
+ }
+
+
+ <!-- /* Boutons des réponses question 2 */ -->
+		
+
+.huile{
+    border-color: #9FB56D;
+    color: black;
+    border-radius : 20px;
+    border: 2px solid #9FB56D;
+    background-color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.huile:hover {
+    background-color: #9FB56D;
+    color: white;
+}
+  
+.bio{
+    border-color: #9FB56D;
+    color: black;
+    border-radius : 20px;
+    border: 2px solid #9FB56D;
+    background-color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.bio:hover {
+    background-color: #9FB56D;
+    color: white;
+}
+
+.aperos{
+    border-color: #9FB56D;
+    color: black;
+    border-radius : 20px;
+    border: 2px solid #9FB56D;
+    background-color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.aperos:hover {
+    background-color: #9FB56D;
+    color: white; 
+}
+
+.epicerie{
+    border-color: #9FB56D;
+    color: black;
+    border-radius : 20px;
+  border: 2px solid #9FB56D;
+  background-color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.epicerie:hover {
+  background: #9FB56D;
+  color: white;
+}
+
+ <!-- /* Barre de réassurance */ -->
+		
+.containerp  {
+    display: flex;
+    align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	margin-top : 20px; 
+}
+  
+  <!-- /* Photo barre de réassurance */ -->
+		
+.photocontainer {
+	width: 300px;
+	height: 300px;
+	padding: 4rem;
+}
+	
+.photocontainer img{
+	max-width:100%;
+	height: 100%;
+	border-radius : 50%;
+}
+
+     <!-- /* Boutons */ -->
+
+.success {
+     background-color : #9FB56D;
+     color: black;
+     padding : 10px; 
+     padding-right : 10px; 
+     padding-left : 10px; 
+     border-radius : 40px; 
+     border : none; 
+     font-size : 18px; 
+     margin-top : 10px; 
+     margin-bottom : 30px; 
+	 cursor:pointer;
+}
+
+.success:hover {
+     background-color: #9FB56D;
+     color: white;
+}

@@ -1,0 +1,248 @@
+body {
+	padding: 0; 
+	margin : 0; 
+	box-sizing : border-box;
+	margin-top:150px;		
+}
+
+<!-- /* Photos profil avis clients*/ -->
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+	
+.photocontainer{
+	width: 300px;
+	height: 300px;
+	padding: 4rem;
+}
+	
+.photocontainer img {
+	max-width:100%;
+	height: 100%;
+	border-radius : 50%; 
+}
+
+<!-- /* Photo slider de la page*/ -->
+
+.photo img {
+	max-width : 100%; 
+	max-height : 100%; 
+}
+
+
+<!-- /* Form 1 : catégorie */ -->
+
+.formun {
+	text-align: center; 
+	font-size : 20px; 
+    margin-bottom : 20px; 
+	margin-top : 20px; 
+}
+
+<!-- /* Form 2 : quantité */ -->
+
+.formdeux {
+	text-align: center; 
+	font-size : 20px; 
+	margin-bottom : 20px; 
+	margin-top : 20px; 
+}
+
+<!-- /* Option de réponses form 2 */ -->
+
+
+.petit{
+     border-color: #9FB56D;
+     color: black;
+     border-radius : 20px;
+     border: 2px solid #9FB56D;
+     background-color: white;
+     padding: 14px 28px;
+     font-size: 16px;
+     cursor: pointer;
+   	margin-bottom : 20px; 
+	margin-top : 20px; 
+}
+
+.petit:hover {
+     background-color: #9FB56D;
+     color: white;
+}
+
+.moyen{
+     border-color: #9FB56D;
+     color: black;
+     border-radius : 20px;
+     border: 2px solid #9FB56D;
+     background-color: white;
+     padding: 14px 28px;
+     font-size: 16px;
+     cursor: pointer;
+     margin-bottom : 20px; 
+	 margin-top : 20px; 
+}
+
+.moyen:hover {
+     background-color: #9FB56D;
+     color: white;
+}
+
+.grand{
+     border-color: #9FB56D;
+     color: black;
+     border-radius : 20px;
+     border: 2px solid #9FB56D;
+     background-color: white;
+     padding: 14px 28px;
+     font-size: 16px;
+     cursor: pointer;
+     margin-bottom : 20px; 
+	 margin-top : 20px; 
+}
+
+.grand:hover {
+     background-color: #9FB56D;
+     color: white;
+}
+
+<!-- /* Option de réponses form 1 */ -->
+
+
+.huile{
+     border-color: #9FB56D;
+     color: black;
+     border-radius : 20px;
+     border: 2px solid #9FB56D;
+     background-color: white;
+     padding: 14px 28px;
+     font-size: 16px;
+     cursor: pointer;
+  	 margin-bottom : 20px; 
+	 margin-top : 20px; 
+}
+
+.huile:hover {
+     background-color: #9FB56D;
+     color: white;
+}
+
+.gourmet{
+     border-color: #9FB56D;
+     color: black;
+     border-radius : 20px;
+     border: 2px solid #9FB56D;
+     background-color: white;
+     padding: 14px 28px;
+     font-size: 16px;
+     cursor: pointer;
+  	 margin-bottom : 20px; 
+	 margin-top : 20px; 
+}
+
+.gourmet:hover {
+     background-color: #9FB56D;
+     color: white;
+}
+
+.epicerie{
+     border-color: #9FB56D;
+     color: black;
+     border-radius : 20px;
+     border: 2px solid #9FB56D;
+     background-color: white;
+     padding: 14px 28px;
+     font-size: 16px;
+     cursor: pointer;
+  	 margin-bottom : 20px; 
+	 margin-top : 20px; 
+}
+
+.epicerie:hover {
+     background-color: #9FB56D;
+     color: white;
+}
+
+input{
+	 padding : 10px; 
+     font-size : 20px; 	
+}
+
+H1{
+	text-align: center; 
+	margin-bottom : 20px; 
+	margin-top : 20px; 
+}
+
+.success {
+     background-color : #9FB56D;
+     color: black;
+     padding : 10px; 
+     padding-right : 10px; 
+     padding-left : 10px; 
+     border-radius : 40px; 
+     border : none; 
+     font-size : 20px; 
+     margin-top : 10px; 
+     margin-bottom : 30px; 
+}
+
+.success:hover {
+     background-color: #9FB56D;
+     color: white;
+}
+
+<!-- /* Texte partie form envoi du devis*/ -->
+
+.texteun {
+	font-size : 20px; 
+	margin-bottom : 20px; 
+	margin-top : 20px; 
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	flex-direction:column;
+	gap: 2rem;
+}
+
+<!-- /* Texte partie avis clients */ -->
+
+.textedeux {
+     text-align: center; 
+	 font-size : 18px; 
+	 background-color :#9FB56D;
+	 margin-top : 50px; 
+	 margin-bottom: 70px;
+}
+
+.textedeux h2 {
+	color : white; 
+	margin-bottom:-25px;
+}
+
+     <!-- /* couleur des étoiles notations */ -->
+
+.checked {
+    color: #DFD831;
+}
+     <!-- /* Case commentaire form */ -->
+
+.commentaires {
+	margin-bottom : 20px; 
+	margin-top : 20px; 
+}
+
+     <!-- /* Case formulaire envoi du devis (nom, prénom etc) */ -->
+				
+.gauche {
+	display: flex; 
+	gap: 2rem;
+}
+
+.droit {
+	display: flex; 
+	gap: 1rem;
+}

@@ -1,0 +1,129 @@
+ body{
+	background-color: #cfdab6;
+	margin: 0px;
+	padding: 0px;
+	margin-top:150px;
+}
+.smn {
+	margin-bottom:50px;
+	position:relative;
+	top: 3%;
+	left: 22%;
+	margin-right:550px;
+}	
+        form{
+            background-color: white;
+            color: black;
+            padding: 40px;
+            border-radius: 15px;
+        }
+    
+        
+        form h1{
+            font-size: 25px;
+            font-weight: bold;
+        }
+        
+        form .separation{
+            width: 100%;
+            height: 1px;
+            background-color: #95C988;
+            
+        }
+        
+        form .corps-form{
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 19px;
+            margin-bottom: 35px;
+        }
+    
+        form .corps-form .groupe{
+            position: relative;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        
+        form .corps-form .gauche .groupe input{
+            margin-top: 5px;
+            padding: 12px 5px 12px 38px;
+            font-family: 'Poppins', sans-serif;
+            border: 1px solid #9E9C92;
+            outline-color: #95C988;
+            border-radius: 3px;
+        }
+        
+        
+        form .corps-form .gauche .groupe i{
+            position: absolute;
+            left: 0;
+            top: 36px;
+            padding: 9px 8px;
+            color: #95C988;
+        }
+        
+        
+        form .corps-form .droite{
+            margin-left: 40px;
+        }
+        
+        
+        form .corps-form .droite .groupe{
+            height: 115%;
+        }
+        
+        
+        form .corps-form .droite .groupe textarea{
+            margin-top: 5px;
+            padding: 10px;
+            font-family: 'Poppins', sans-serif;
+            border: 1px solid #95C988;
+            outline: none;
+            border-radius: 3px;
+            resize: none;
+            height: 73%;
+        }
+        
+        
+        
+        form .pied-form button{
+            background-color: #95C988;
+            margin-top: 10px;
+            font-family: 'Poppins', sans-serif;
+            cursor: pointer;
+            border: solid 2px;
+            border-color: none;
+            outline: none;
+            color: white;
+            font-size: 19px;
+            border-radius: 360px;
+            padding: 8px 20px;
+            transition: transform 0.5s;
+ 
+        }
+        
+        
+        form .pied-form button:hover{
+            transform: scale(1.05)
+ 
+        }
+        
+        
+
+        label abbr {
+            position: absolute;
+            margin-top: -77px;
+            font-size: 13px;
+            left: -0.5em;
+            color: red;
+        }
+        
+        
+        
+        @media screen and (max-width: 920px){
+            form .corps-form .droite{
+            margin-left: 0px;
+        }   
+        }
