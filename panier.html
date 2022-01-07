@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+	<title>Mon panier - Don Olivar</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/panier.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+	<!-- Menu de navigation-->
+
+	<nav>
+	<label>☰</label>
+		<div class="menu-bar">
+			<div class="container">
+				<div class="navbar">
+					<ul>
+						<li>
+							<div class="logo">
+								<a href="index.html"><img class="logo" src="images/accueil/logo.png" alt="Logo Don Olivar" loading=lazy></a>
+							</div>
+						</li>
+						<li class="limenu"><a href="index.html">Accueil</a></li>
+						<li class="limenu">
+							<a href="boutique.html">Boutique</a>
+							<div class="sous-menu">
+								<ul>
+									<li><a href="boutique.html">Huiles</a></li>
+									<li><a href="boutique.html">Bio</a></li>
+									<li><a href="boutique.html">Gourmet</a></li>
+									<li><a href="boutique.html">Epicerie</a></li>
+									<li><a href="nospaniers.html">Nos paniers</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="limenu"><a href="promotions.html">Promotions</a></li>
+						<li class="limenu"><a href="espacepro.html">Espace pro</a></li>
+						<li class="limenu"><a href="blogaccueil.html">Blog</a></li>
+						<li class="limenu"><a href="#"><img class="loupe" src="images/loupe.svg" alt="loupe" loading=lazy></a></li>
+						<li class="limenu"><a href="inscription.html"><img class="compte" src="images/compte.svg" alt="compte" loading=lazy></a>
+							<div class="sous-menu">
+								<ul>
+									<li>
+										<?php
+											if(isset($_SESSION['nom'])){
+										?>
+										<div style="float:left">
+											<a href='page_membre.php'> Mon compte </a> <br>
+											<?php echo "Bonjour". " ".$_SESSION['nom'];?> </div> <br> <br>
+										<?php } 
+										else {
+										?>
+											<a href='formcon_ins.html' style="float:left"> Connexion </a> <br>
+										<?php 
+										}
+										?>
+										<!--<a href="seconnecter.html">Se connecter</a>-->
+									</li>
+									<!--<li><a href="contact.html">Créer un compte</a></li>-->
+								</ul>
+							</div>
+						</li>
+						<li class="limenu"><a href="#"><img class="panier" src="images/panier.svg" alt="panier" loading=lazy></a></li> 
+						<li class="limenu"><a href="#"><img class="eye" src="images/eye.svg" alt="eye" loading=lazy></a></li> 
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+	<!-- Fin du menu de navigation-->
+	
+	
+	<!-- Mon panier -->
+	
+	<h1 class="h1panier"> MON PANIER </h1>
+
+	<div class="shopping-cart">
+
+		<div class="column-labels">
+			<label class="product-image">Image</label>
+			<label class="product-details">Product</label>
+			<label class="product-price">Prix</label>
+			<label class="product-quantity">Quantité</label>
+			<label class="product-removal">Supprimer</label>
+			<label class="product-line-price">Total</label>
+		</div>
+
+		<div class="productpanier">
+			<div class="product-image">
+				<img class="huile" src="images/tapenade.png" alt="Tapenade" loading=lazy>
+		</div>
+		
+		<div class="product-details">
+			<div class="product-title">Tapenade de Vizcántar</div>
+			<p class="product-description">Tapenade fabriquée avec une excellente huile multivariétale protégée par l'appellation d'origine Priego de Córdoba, élaborée de manière artisanale, à partir d'olives récoltées à leur point de maturation optimal.</p>
+		</div>
+		<div class="product-price">9,99</div>
+		<div class="product-quantity">
+			<input type="number" value="2" min="1">
+		</div>
+			<div class="product-removal">
+				<button class="remove-product">
+				Supprimer
+				</button>
+			</div>
+		<div class="product-line-price">19,98</div>
+		</div>
+
+  <div class="productpanier">
+    <div class="product-image">
+      <img class="huile" src="images/pdthuile.jpg" alt="huile" loading=lazy>
+    </div>
+    <div class="product-details">
+      <div class="product-title">Huile aromatisée - ROMERO</div>
+      <p class="product-description">L'huile arbequina et les arômes naturels du romarin sont mélangés pour vous offrir une huile aromatique d'excellente qualité.
+
+</p>
+    </div>
+    <div class="product-price">14,99</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Supprimer
+      </button>
+    </div>
+    <div class="product-line-price">14,99</div>
+  </div>
+
+  <div class="totals">
+    <div class="totals-item">
+	  <div class="totals-value" id="cart-subtotal">34,97</div>
+      <p>Sous-total</p>
+    </div>
+    <div class="totals-item">
+      <div class="totals-value" id="cart-tax">1,37</div>
+	   <p>TVA (5,5%)</p>
+    </div>
+    <div class="totals-item">
+      <div class="totals-value" id="cart-shipping">15,00</div>
+	  <p>Livraison</p>
+    </div>
+    <div class="totals-item totals-item-total">
+      <div class="totals-value" id="cart-total">90,57</div>
+	  <p>Total TTC</p>
+    </div>
+  </div>
+      
+      <button class="checkout">Commander</button>
+
+	</div>
+
+	<!-- Fin de mon panier -->
+
+  <!-- JAVASCRIPT -->
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="javascript/panier.js"></script>
+  
+	<!-- Section avant footer -->
+	
+	<div class="avantfooter">
+		<div class="container">
+			<div class="row">
+				<div class="avantfooter-col">
+					<p>Paiement sécurisé</p>
+					<div class="avfooter">
+						<img class="avfooterlogo" src="images/af1.png" alt="Paiement sécurisé" loading=lazy>
+					</div>
+				</div>
+				<div class="avantfooter-col">
+					<p>Aide et contact</p>
+					<div class="avfooter">
+						<img class="avfooterlogo" src="images/af2.png" alt="Aide et contact" loading=lazy>
+					</div>
+				</div>
+				<div class="avantfooter-col">
+					<p>Retours gratuits</p>
+					<div class="avfooter">
+						<img class="avfooterlogo" src="images/af3.png" alt="Retours gratuits" loading=lazy>
+					</div>
+				</div>
+				<div class="avantfooter-col">
+					<p>Livraison gratuite dès 120€ d'achats</p>
+					<div class="avfooter">
+						<img class="avfooterlogo" src="images/af4.png" alt="Livraison gratuite dès 120€" loading=lazy>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Fin de la section avant footer -->
+	
+	
+	<!-- Footer -->
+	
+	<div class="footer">
+	
+		<!-- Newsletter -->
+		
+		<h2> Inscrivez-vous à notre newsletter !</h2>
+			<div class= "newsletter">
+				<input type="text" name="adresse mail" id="id_mail" placeholder="Entrez votre adresse e-mail" onFocus="this.value='';"><br />
+				<input type= "submit" value="S'inscrire" name = "bouton">
+			</div>
+			<div class="conditions">
+				<input name = "Accords_conditions" type= "checkbox" value="1" required>
+				<a href = "#" target="_blank" >J'ai lu et j'accepte les termes et conditions</a>
+			</div>
+	
+					<!-- Ligne de séparation -->
+					<hr />
+				
+		<!-- 3 colonnes -->
+		
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Restons connectés</h3>
+					<div class="applogo">
+						<a href="https://www.facebook.com/DonOlivar-110550281478277"><img class="applogoimg" src="images/reseaux/facebook.png" alt="Logo Facebook"></a>
+						<a href="https://www.linkedin.com/company/don-olivar/"><img class="applogoimg" src="images/reseaux/linkedin.png" alt="Logo LinkedIn"></a>
+						<a href="https://www.instagram.com/donolivar/"><img class="applogoimg" src="images/reseaux/instagram.png" alt="Logo Instagram"></a>
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<h3>A propos</h3>
+					<ul>
+						<li><a href="#">Qui sommes-nous ?</a></li>
+						<li><a href="#">Avis clients</a></li>
+						<li><a href="#">Nous rejoindre</a></li>
+					</ul>
+				</div>
+				<div class="footer-col-3">
+					<h3>Aide</h3>
+					<ul>
+						<li><a href="contact.html">Contactez-nous</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Livraisons et retours</a></li>
+						<li><a href="politique.html">Politique de confidentialité</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+	<!-- Fin du footer -->
+	
+
+
+</body>
+</html>
