@@ -15,47 +15,63 @@
 
 
 	<!-- Menu de navigation-->
-	
+
 	<nav>
+	<label>☰</label>
 		<div class="menu-bar">
-			<ul>
-		<div class="container">
-			<div class="navbar">
-				<div class="logo">
-					<a href="index.html"><img class="logo" src="images/accueil/logo.png" alt="Logo Don Olivar" loading=lazy></a>
-				</div>
-			<li><a href="index.html">Accueil</a></li>
-			<li><a href="boutique.html">Boutique</a>
-				<div class="sous-menu">
+			<div class="container">
+				<div class="navbar">
 					<ul>
-						<li><a href="huiles.html">Huiles</a></li>
-						<li><a href="bio.html">Bio</a></li>
-						<li><a href="gourmet.html">Gourmet</a></li>
-						<li><a href="epicerie.html">Epicerie</a></li>
-						<li><a href="nospaniers.html">Nos paniers</a></li>
+						<li>
+							<div class="logo">
+								<a href="index.html"><img class="logo" src="images/accueil/logo.png" alt="Logo Don Olivar" loading=lazy></a>
+							</div>
+						</li>
+						<li class="limenu"><a href="index.html">Accueil</a></li>
+						<li class="limenu">
+							<a href="boutique.html">Boutique</a>
+							<div class="sous-menu">
+								<ul>
+									<li><a href="boutique.html">Huiles</a></li>
+									<li><a href="boutique.html">Bio</a></li>
+									<li><a href="boutique.html">Gourmet</a></li>
+									<li><a href="boutique.html">Epicerie</a></li>
+									<li><a href="nospaniers.html">Nos paniers</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="limenu"><a href="promotions.html">Promotions</a></li>
+						<li class="limenu"><a href="espacepro.html">Espace pro</a></li>
+						<li class="limenu"><a href="blogaccueil.html">Blog</a></li>
+						<li class="limenu"><a href="#"><img class="loupe" src="images/loupe.svg" alt="loupe" loading=lazy></a></li>
+						<li class="limenu"><a href="inscription.html"><img class="compte" src="images/compte.svg" alt="compte" loading=lazy></a>
+							<div class="sous-menu">
+								<ul>
+									<li>
+										<?php
+											if(isset($_SESSION['nom'])){
+										?>
+										<div style="float:left">
+											<a href='page_membre.php'> Mon compte </a> <br>
+											<?php echo "Bonjour". " ".$_SESSION['nom'];?> </div> <br> <br>
+										<?php } 
+										else {
+										?>
+											<a href='formcon_ins.html' style="float:left"> Connexion </a> <br>
+										<?php 
+										}
+										?>
+										<!--<a href="seconnecter.html">Se connecter</a>-->
+									</li>
+									<!--<li><a href="contact.html">Créer un compte</a></li>-->
+								</ul>
+							</div>
+						</li>
+						<li class="limenu"><a href="panier.html"><img class="panier" src="images/panier.svg" alt="panier" loading=lazy></a></li> 
+						<li class="limenu"><a href="#"><img class="eye" src="images/eye.svg" alt="eye" loading=lazy></a></li> 
 					</ul>
 				</div>
-			</li>
-			<li><a href="promotions.html">Promotions</a>
-			</li>
-			<li><a href="espacepro.html">Espace pro</a></li>
-			<li><a href="blogaccueil.html">Blog</a>
-			</li>
-	
-			<li><a href="#"><img class="loupe" src="images/loupe.svg" alt="loupe" loading=lazy></a></li>
-			<li><a href="inscription.html"><img class="compte" src="images/compte.svg" alt="compte" loading=lazy></a>
-			<div class="sous-menu">
-					<ul>
-						<li><a href="seconnecter.html">Se connecter</a></li>
-						<li><a href="contact.html">Créer un compte</a></li>
-					</ul>
-				</div>
-			</li>
-			<li><a href="#"><img class="panier" src="images/panier.svg" alt="panier" loading=lazy></a></li> 
-			<li><a href="#"><img class="eye" src="images/eye.svg" alt="eye" loading=lazy></a></li> 
-			</ul>
 			</div>
-		</div>
 		</div>
 	</nav>
 	
@@ -90,7 +106,7 @@
 	  
 	  <div class="promodiv">
 		<h3>Devenez un expert de<br/>l'huile d'olive et remportez des bons d'achats !</h3><br/>
-		<p>Du 1er au 25 décembre 2021</p>
+		<p>Du 31 janvier au 10 février 2022</p>
 		<input type= "submitjouer" value="Jouer" name = "bouton">
 	  </div>
     </section>
