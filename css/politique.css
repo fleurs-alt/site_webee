@@ -31,10 +31,13 @@ body {
 .lidescription {
 	margin-left: 15%;
 	margin-right: 15%;
-	margin-top: 10px;
+	margin-top: 20px;
 	margin-bottom: 10px;
 	list-style: none;
-	
+}
+.li_info {
+	margin-top: 20px;
+	text-align:center;
 }
 
 .pol {

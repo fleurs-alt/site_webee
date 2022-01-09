@@ -20,7 +20,7 @@ h1 {
 	margin-bottom:100px;
 }
 
-input[type=textboutique] {
+input[name="login"] {
   width: 15%;
   padding: 6px;
   text-align: center;
@@ -37,8 +37,40 @@ input[type=textboutique] {
   margin-bottom:-5px;
 }
 
-.conditions {
-	margin-top:20px;
+.breadcrumbs2 input[type="submit"] {
+  width: 15%;
+  padding: 6px;
+  text-align: center;
+  margin: 8px 0;
+  margin-left:10px;
+  margin-right:70px;
+  color: black;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #9FB56D;
+  border-radius: 60px;
+  font-size: 16px;
+  background: #CFDAB6; 
+  margin-bottom:-5px;
+}
+
+input[id="rechercher"] {
+    width: 10%;
+    font-size: 100%;
+    color: black;
+    padding:7px;
+    padding-left: 5px;
+    background:#EDEBDF; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 60px; 
+	margin:20px 0;
+	margin-bottom:15px;
+}
+
+.promos {
+	margin-top:10px;
 }
 
 .section2 {
@@ -65,22 +97,4 @@ input[type=textboutique] {
 	display: inline-block;
 	margin-right: 100px;
 
-}
-
-input[type=menubtq] {
-  width: 200px;
-  background: #EDEBDF; 
-  cursor: pointer;
-  padding: 6px;
-  text-align: center;
-  margin: 8px 0;
-  margin-left: 10px;
-  margin-right: 40px;
-  color: black;
-  box-sizing: border-box;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #9FB56D;
-  border-radius: 60px;
-  font-size: 16px;
 }

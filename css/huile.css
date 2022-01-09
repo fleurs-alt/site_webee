@@ -113,11 +113,11 @@ huileproduit {
 
 /********** AJOUTER AU PANIER **********/
 
-input[type=submit2] {
+input[id="produit"] {
     width: 30%;
     font-size: 15px;
 	text-align: center;
-    color: white;
+    color: black;
     padding: 7px;
     padding-left: 5px;
     background: #9FB56D; 
@@ -125,4 +125,7 @@ input[type=submit2] {
     cursor: pointer;
     -webkit-border-radius: 60px; 
 	font-family: Poppins, sans-serif;
+}
+input[id="produit"]:hover {
+  color: white;
 }

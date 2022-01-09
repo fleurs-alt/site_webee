@@ -80,6 +80,29 @@ body {
 }
 
 
+/********** BOUTON **********/
+
+input[id="command"] {
+	float:right;
+    width: 20%;
+    font-size: 15px;
+	text-align: center;
+    color: black;
+    padding: 10px 20px;
+    background: #9FB56D; 
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 60px; 
+	font-family: Poppins, sans-serif;
+	font-size: 16px;
+	margin-top: 20px; 
+    margin-bottom: 50px; 
+}
+
+input[id="command"]:hover {
+  color: white;
+}
+
 /********** COLONNES **********/
 
 .column-labels label {
@@ -155,22 +178,6 @@ body {
 .totals-item p {
 	float:right;
 	margin-left:20px;
-}
-.checkout {
-  float: right;
-  border: 0;
-  margin-top: 20px;
-  padding: 6px 25px;
-  background-color: #9FB56D;
-  color: black;
-  font-size: 22px;
-  border-radius: 3px;
-  cursor: pointer;
-  margin-bottom:50px;
-}
-
-.checkout:hover {
-  color: white;
 }
 
 
