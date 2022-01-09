@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="fr">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Mon panier - Don Olivar</title>
@@ -12,12 +13,12 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
 	<!-- Menu de navigation-->
 
 	<nav>
-	<label>☰</label>
 		<div class="menu-bar">
 			<div class="container">
 				<div class="navbar">
@@ -47,27 +48,12 @@
 						<li class="limenu"><a href="inscription.html"><img class="compte" src="images/compte.svg" alt="compte" loading=lazy></a>
 							<div class="sous-menu">
 								<ul>
-									<li>
-										<?php
-											if(isset($_SESSION['nom'])){
-										?>
-										<div style="float:left">
-											<a href='page_membre.php'> Mon compte </a> <br>
-											<?php echo "Bonjour". " ".$_SESSION['nom'];?> </div> <br> <br>
-										<?php } 
-										else {
-										?>
-											<a href='formcon_ins.html' style="float:left"> Connexion </a> <br>
-										<?php 
-										}
-										?>
-										<!--<a href="seconnecter.html">Se connecter</a>-->
-									</li>
-									<!--<li><a href="contact.html">Créer un compte</a></li>-->
+									<li><a href="#">Se connecter</a></li>
+									<li><a href="#">Créer un compte</a></li>
 								</ul>
 							</div>
 						</li>
-						<li class="limenu"><a href="#"><img class="panier" src="images/panier.svg" alt="panier" loading=lazy></a></li> 
+						<li class="limenu"><a href="panier.html"><img class="panier" src="images/panier.svg" alt="panier" loading=lazy></a></li> 
 						<li class="limenu"><a href="#"><img class="eye" src="images/eye.svg" alt="eye" loading=lazy></a></li> 
 					</ul>
 				</div>
@@ -155,7 +141,9 @@
     </div>
   </div>
       
-      <button class="checkout">Commander</button>
+      <form action="information.html">
+			<input type= "submit" id="command" value="Commander">
+	  </form>
 
 	</div>
 

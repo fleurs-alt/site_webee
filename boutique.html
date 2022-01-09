@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Boutique - Don Olivar</title>
@@ -11,13 +12,13 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
 
 	<!-- Menu de navigation-->
 
 	<nav>
-	<label>☰</label>
 		<div class="menu-bar">
 			<div class="container">
 				<div class="navbar">
@@ -47,27 +48,12 @@
 						<li class="limenu"><a href="inscription.html"><img class="compte" src="images/compte.svg" alt="compte" loading=lazy></a>
 							<div class="sous-menu">
 								<ul>
-									<li>
-										<?php
-											if(isset($_SESSION['nom'])){
-										?>
-										<div style="float:left">
-											<a href='page_membre.php'> Mon compte </a> <br>
-											<?php echo "Bonjour". " ".$_SESSION['nom'];?> </div> <br> <br>
-										<?php } 
-										else {
-										?>
-											<a href='formcon_ins.html' style="float:left"> Connexion </a> <br>
-										<?php 
-										}
-										?>
-										<!--<a href="seconnecter.html">Se connecter</a>-->
-									</li>
-									<!--<li><a href="contact.html">Créer un compte</a></li>-->
+									<li><a href="#">Se connecter</a></li>
+									<li><a href="#">Créer un compte</a></li>
 								</ul>
 							</div>
 						</li>
-						<li class="limenu"><a href="#"><img class="panier" src="images/panier.svg" alt="panier" loading=lazy></a></li> 
+						<li class="limenu"><a href="panier.html"><img class="panier" src="images/panier.svg" alt="panier" loading=lazy></a></li> 
 						<li class="limenu"><a href="#"><img class="eye" src="images/eye.svg" alt="eye" loading=lazy></a></li> 
 					</ul>
 				</div>
@@ -81,12 +67,10 @@
 	<!-- Menu navigation produits -->
 
 	<div class="breadcrumbs2">
-		<ul>
-			<a href="#"><input type= "menubtq" value="Huiles" name = "bouton"></a>
-			<a href="#"><input type= "menubtq" value="Bio" name = "bouton"></a>
-			<a href="#"><input type= "menubtq" value="Epicerie" name = "bouton"></a>
-			<a href="#"><input type= "menubtq" value="Gourmet" name = "bouton"></a>
-		</ul>
+			<input type="submit" value="Huiles" name = "bouton">
+			<input type="submit" value="Bio" name = "bouton">
+			<input type="submit" value="Epicerie" name = "bouton">
+			<input type="submit" value="Gourmet" name = "bouton">
 	</div>
 
 	<!-- Fin du menu navigation produits -->
@@ -98,17 +82,17 @@
 	<div class="rechercheboutique">
 	<br>
 		<form action="login.php" method="post">
-		Type <input type="textboutique" name="login">
+		Type <input type="text" name="login"></form>
 	
 		<form action="login.php" method="post">
-		Format <input type="textboutique" name="login">
+		Format <input type="text" name="login"></form>
 	
 		<form action="login.php" method="post">
-		Origine <input type="textboutique" name="login">
+		Origine <input type="text" name="login"></form>
 	
-	<input type= "submit" value="Rechercher" name = "bouton">
+	<input type= "submit" id="rechercher" value="Rechercher" name = "bouton">
 	
-	<div class="conditions">
+	<div class="promos">
 		<input name = "Accords_conditions" type= "checkbox" value="1" required>
 		<a href = "#" target="_blank" >Promotions</a>
 	</div>
@@ -264,7 +248,7 @@
 	
 	<h2 class="h2boutique">Pourquoi commander sur Don Olivar ?</h2>
 	
-	<section class="section2">
+	<div class="section2">
 		<div class="col-2">
 				<img class="4raisons" src="images/4-1.png" alt="4 raisons de commander" loading=lazy>
 					<p>Des produits de qualité</p>
@@ -281,7 +265,7 @@
 				<img class="4raisons" src="images/4-4.png" alt="4 raisons de commander" loading=lazy>
 					<p>Une large gamme de prix</p>
 		</div>
-	</section>
+	</div>
 	
 	
 	

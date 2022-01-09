@@ -20,7 +20,6 @@
 	<!-- Menu de navigation-->
 
 	<nav>
-	<label>☰</label>
 		<div class="menu-bar">
 			<div class="container">
 				<div class="navbar">
@@ -50,23 +49,8 @@
 						<li class="limenu"><a href="inscription.html"><img class="compte" src="images/compte.svg" alt="compte" loading=lazy></a>
 							<div class="sous-menu">
 								<ul>
-									<li>
-										<?php
-											if(isset($_SESSION['nom'])){
-										?>
-										<div style="float:left">
-											<a href='page_membre.php'> Mon compte </a> <br>
-											<?php echo "Bonjour". " ".$_SESSION['nom'];?> </div> <br> <br>
-										<?php } 
-										else {
-										?>
-											<a href='formcon_ins.html' style="float:left"> Connexion </a> <br>
-										<?php 
-										}
-										?>
-										<!--<a href="seconnecter.html">Se connecter</a>-->
-									</li>
-									<!--<li><a href="contact.html">Créer un compte</a></li>-->
+									<li><a href="#">Se connecter</a></li>
+									<li><a href="#">Créer un compte</a></li>
 								</ul>
 							</div>
 						</li>
@@ -110,7 +94,9 @@
 						 
 						     Si vous le souhaitez, vous pourrez vous  enregistrer et sauvegarder vos informations personnelles pour vos prochains achats à la fin du processus. </p> 
 							 
-						         <button class="btn success">Continuez en tant qu'invité(e)</button>
+				<form action="paiement.html">
+					<input type= "submit" id="continuez" value="Continuez en tant qu'invité(e)">
+				</form>
 
 			</div>
 						
@@ -129,7 +115,9 @@
 					  
 	                             <input type="password" placeholder= ""/>
 	    
-		                         <button class="btn success">Se connecter </button>
+		                      <form action="paiement.html">
+								<input type= "submit" id="connecter" value="Se connecter">
+							  </form>
 								   
 									 <a href="https://fr.w3docs.com/">Mot de passe oublié</a>
 		   </div>
