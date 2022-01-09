@@ -1,3 +1,5 @@
+/********** GENERAL **********/
+
 body {
 	padding: 0; 
 	margin : 0; 
@@ -14,17 +16,16 @@ body {
 .texte h1 {
 		margin-top : 50px;
         margin-bottom : 40px; 		
-	}
-	 
-	   <!-- /* Question 1*/ -->
-	   
+}
+
 .texte h2 {
 		margin-top : 80px;
         margin-bottom : 30px; 		
-	}
-	
-        <!-- /* Boutons des réponses question 1*/ -->
-		
+}
+
+
+/********** QUESTION 1 **********/
+
 .produittrois {
 	border-color: #9FB56D;
     color: black;
@@ -40,7 +41,6 @@ body {
     background-color: #9FB56D;
     color: black;
 }
-
 
 .produitquatre {
     border-color: #9FB56D;
@@ -58,7 +58,6 @@ body {
     color: white; 
 }
 
-
 .produitsix {
     border-color: #9FB56D;
     color: black;
@@ -73,13 +72,12 @@ body {
 .produitsix:hover {
     background-color: #9FB56D;
     color: white;
- }
+}
 
 
- <!-- /* Boutons des réponses question 2 */ -->
-		
+/********** REPONSES QUESTION 2 **********/
 
-.huile{
+.huile {
     border-color: #9FB56D;
     color: black;
     border-radius : 20px;
@@ -94,8 +92,8 @@ body {
     background-color: #9FB56D;
     color: white;
 }
-  
-.bio{
+
+.bio {
     border-color: #9FB56D;
     color: black;
     border-radius : 20px;
@@ -111,7 +109,7 @@ body {
     color: white;
 }
 
-.aperos{
+.aperos {
     border-color: #9FB56D;
     color: black;
     border-radius : 20px;
@@ -123,19 +121,19 @@ body {
 }
 
 .aperos:hover {
-    background-color: #9FB56D;
+	background-color: #9FB56D;
     color: white; 
 }
 
-.epicerie{
-    border-color: #9FB56D;
+.epicerie {
+	border-color: #9FB56D;
     color: black;
-    border-radius : 20px;
-  border: 2px solid #9FB56D;
-  background-color: white;
-  padding: 14px 28px;
-  font-size: 16px;
-  cursor: pointer;
+    border-radius: 20px;
+	border: 2px solid #9FB56D;
+	background-color: white;
+	padding: 14px 28px;
+	font-size: 16px;
+	cursor: pointer;
 }
 
 .epicerie:hover {
@@ -143,18 +141,16 @@ body {
   color: white;
 }
 
- <!-- /* Barre de réassurance */ -->
+/********** BARRE REASSURANCE **********/
 		
-.containerp  {
+.containerp {
     display: flex;
     align-items: center;
 	justify-content: center;
 	gap: 1rem;
-	margin-top : 20px; 
+	margin-top: 20px; 
 }
-  
-  <!-- /* Photo barre de réassurance */ -->
-		
+	
 .photocontainer {
 	width: 300px;
 	height: 300px;
@@ -162,25 +158,25 @@ body {
 }
 	
 .photocontainer img{
-	max-width:100%;
+	max-width: 100%;
 	height: 100%;
-	border-radius : 50%;
+	border-radius: 50%;
 }
 
-     <!-- /* Boutons */ -->
+/********** BOUTONS **********/
 
 .success {
-     background-color : #9FB56D;
+     background-color: #9FB56D;
      color: black;
-     padding : 10px; 
-     padding-right : 10px; 
-     padding-left : 10px; 
-     border-radius : 40px; 
-     border : none; 
-     font-size : 18px; 
-     margin-top : 10px; 
-     margin-bottom : 30px; 
-	 cursor:pointer;
+     padding: 10px; 
+     padding-right: 10px; 
+     padding-left: 10px; 
+     border-radius: 40px; 
+     border: none; 
+     font-size: 18px; 
+     margin-top: 10px; 
+     margin-bottom: 30px; 
+	 cursor: pointer;
 }
 
 .success:hover {

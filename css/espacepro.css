@@ -1,3 +1,5 @@
+/********** GENERAL **********/
+
 body {
 	padding: 0; 
 	margin : 0; 
@@ -5,7 +7,7 @@ body {
 	margin-top:150px;		
 }
 
-<!-- /* Photos profil avis clients*/ -->
+/********** PHOTOS AVIS CLIENTS **********/
 
 .container {
 	display: flex;
@@ -26,46 +28,47 @@ body {
 	border-radius : 50%; 
 }
 
-<!-- /* Photo slider de la page*/ -->
+/********** SLIDER **********/
 
 .photo img {
-	max-width : 100%; 
-	max-height : 100%; 
+	max-width: 100%; 
+	max-height: 100%; 
 }
 
 
-<!-- /* Form 1 : catégorie */ -->
+/********** FORM 1 : catégorie **********/
 
 .formun {
 	text-align: center; 
-	font-size : 20px; 
-    margin-bottom : 20px; 
-	margin-top : 20px; 
+	font-size: 20px; 
+    margin-bottom: 20px; 
+	margin-top: 20px; 
 }
 
-<!-- /* Form 2 : quantité */ -->
+
+/********** FORM 2 : quantité **********/
 
 .formdeux {
 	text-align: center; 
-	font-size : 20px; 
-	margin-bottom : 20px; 
-	margin-top : 20px; 
+	font-size: 20px; 
+	margin-bottom: 20px; 
+	margin-top: 20px; 
 }
 
-<!-- /* Option de réponses form 2 */ -->
 
+/********** OPTIONS REPONSES FORM 2 **********/
 
-.petit{
-     border-color: #9FB56D;
-     color: black;
-     border-radius : 20px;
-     border: 2px solid #9FB56D;
-     background-color: white;
-     padding: 14px 28px;
-     font-size: 16px;
-     cursor: pointer;
-   	margin-bottom : 20px; 
-	margin-top : 20px; 
+.petit {
+	border-color: #9FB56D;
+	color: black;
+	border-radius: 20px;
+	border: 2px solid #9FB56D;
+	background-color: white;
+	padding: 14px 28px;
+	font-size: 16px;
+	cursor: pointer;
+	margin-bottom: 20px; 
+	margin-top: 20px; 
 }
 
 .petit:hover {
@@ -73,17 +76,17 @@ body {
      color: white;
 }
 
-.moyen{
+.moyen {
      border-color: #9FB56D;
      color: black;
-     border-radius : 20px;
+     border-radius: 20px;
      border: 2px solid #9FB56D;
      background-color: white;
      padding: 14px 28px;
      font-size: 16px;
      cursor: pointer;
-     margin-bottom : 20px; 
-	 margin-top : 20px; 
+     margin-bottom: 20px; 
+	 margin-top: 20px; 
 }
 
 .moyen:hover {
@@ -91,17 +94,17 @@ body {
      color: white;
 }
 
-.grand{
+.grand {
      border-color: #9FB56D;
      color: black;
-     border-radius : 20px;
+     border-radius: 20px;
      border: 2px solid #9FB56D;
      background-color: white;
      padding: 14px 28px;
      font-size: 16px;
      cursor: pointer;
-     margin-bottom : 20px; 
-	 margin-top : 20px; 
+     margin-bottom: 20px; 
+	 margin-top: 20px; 
 }
 
 .grand:hover {
@@ -109,20 +112,20 @@ body {
      color: white;
 }
 
-<!-- /* Option de réponses form 1 */ -->
 
+/********** OPTIONS REPONSES FORM 1 **********/
 
-.huile{
+.huile {
      border-color: #9FB56D;
      color: black;
-     border-radius : 20px;
+     border-radius: 20px;
      border: 2px solid #9FB56D;
      background-color: white;
      padding: 14px 28px;
      font-size: 16px;
      cursor: pointer;
-  	 margin-bottom : 20px; 
-	 margin-top : 20px; 
+  	 margin-bottom: 20px; 
+	 margin-top: 20px; 
 }
 
 .huile:hover {
@@ -130,17 +133,17 @@ body {
      color: white;
 }
 
-.gourmet{
+.gourmet {
      border-color: #9FB56D;
      color: black;
-     border-radius : 20px;
+     border-radius: 20px;
      border: 2px solid #9FB56D;
      background-color: white;
      padding: 14px 28px;
      font-size: 16px;
      cursor: pointer;
-  	 margin-bottom : 20px; 
-	 margin-top : 20px; 
+  	 margin-bottom: 20px; 
+	 margin-top: 20px; 
 }
 
 .gourmet:hover {
@@ -148,17 +151,17 @@ body {
      color: white;
 }
 
-.epicerie{
+.epicerie {
      border-color: #9FB56D;
      color: black;
-     border-radius : 20px;
+     border-radius: 20px;
      border: 2px solid #9FB56D;
      background-color: white;
      padding: 14px 28px;
      font-size: 16px;
      cursor: pointer;
-  	 margin-bottom : 20px; 
-	 margin-top : 20px; 
+  	 margin-bottom: 20px; 
+	 margin-top: 20px; 
 }
 
 .epicerie:hover {
@@ -166,28 +169,28 @@ body {
      color: white;
 }
 
-input{
-	 padding : 10px; 
-     font-size : 20px; 	
+input {
+	 padding: 10px; 
+     font-size: 20px; 	
 }
 
-H1{
+h1 {
 	text-align: center; 
-	margin-bottom : 20px; 
-	margin-top : 20px; 
+	margin-bottom: 20px; 
+	margin-top: 20px; 
 }
 
 .success {
-     background-color : #9FB56D;
+     background-color: #9FB56D;
      color: black;
-     padding : 10px; 
-     padding-right : 10px; 
-     padding-left : 10px; 
-     border-radius : 40px; 
-     border : none; 
-     font-size : 20px; 
-     margin-top : 10px; 
-     margin-bottom : 30px; 
+     padding: 10px;
+     padding-right: 10px;
+     padding-left: 10px;
+     border-radius: 40px;
+     border: none;
+     font-size: 20px;
+     margin-top: 10px;
+     margin-bottom: 30px;
 }
 
 .success:hover {
@@ -195,48 +198,54 @@ H1{
      color: white;
 }
 
-<!-- /* Texte partie form envoi du devis*/ -->
+
+/********** TEXTE ENVOI DU DEVIS **********/
 
 .texteun {
-	font-size : 20px; 
-	margin-bottom : 20px; 
-	margin-top : 20px; 
-	display:flex;
-	align-items:center;
+	font-size: 20px; 
+	margin-bottom: 20px; 
+	margin-top: 20px; 
+	display: flex;
+	align-items: center;
 	justify-content: center;
-	flex-direction:column;
+	flex-direction: column;
 	gap: 2rem;
 }
 
-<!-- /* Texte partie avis clients */ -->
+
+/********** TEXTE AVIS CLIENTS **********/
 
 .textedeux {
      text-align: center; 
-	 font-size : 18px; 
-	 background-color :#9FB56D;
-	 margin-top : 50px; 
+	 font-size: 18px; 
+	 background-color: #9FB56D;
+	 margin-top: 50px; 
 	 margin-bottom: 70px;
 }
 
 .textedeux h2 {
-	color : white; 
-	margin-bottom:-25px;
+	color: white; 
+	margin-bottom: -25px;
 }
 
-     <!-- /* couleur des étoiles notations */ -->
+
+/********** ETOILES NOTATIONS **********/
 
 .checked {
     color: #DFD831;
 }
-     <!-- /* Case commentaire form */ -->
+
+
+/********** CASE COMMENTAIRE FORM **********/
 
 .commentaires {
-	margin-bottom : 20px; 
-	margin-top : 20px; 
+	margin-bottom: 20px; 
+	margin-top: 20px; 
 }
 
-     <!-- /* Case formulaire envoi du devis (nom, prénom etc) */ -->
-				
+
+/********** CASE FORMULAIRE ENVOI DU DEVIS **********/
+		
 .gauche {
 	display: flex; 
 	gap: 2rem;

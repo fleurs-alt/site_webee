@@ -1,3 +1,5 @@
+/********** GENERAL **********/
+
 body {
 	padding: 0; 
 	margin : 0; 
@@ -6,7 +8,7 @@ body {
 }
 
 
-     <!-- /* Bouton "je veux mon panier  */ -->
+/********** BOUTON JE VEUX MON PANIER **********/
 	 
 .btn {
      border: 2px solid black;
@@ -18,20 +20,20 @@ body {
 }
 
 .dropbtn {
-	margin-left : 60px; 
+	margin-left: 60px; 
 }
 
 .success {
-     background-color : #9FB56D;
+     background-color: #9FB56D;
      color: black;
-     padding : 10px; 
-     padding-right : 10px; 
-     padding-left : 10px; 
-     border-radius : 40px; 
-     border : none; 
-     font-size : 20px; 
-     margin-top : 40px; 
-     margin-bottom : 30px; 
+     padding: 10px; 
+     padding-right: 10px; 
+     padding-left: 10px; 
+     border-radius: 40px; 
+     border: none; 
+     font-size: 20px; 
+     margin-top: 40px; 
+     margin-bottom: 30px; 
 }
 
 .success:hover {
@@ -39,78 +41,78 @@ body {
      color: white;
 }
 
- <!-- /* Photo de l'offre*/ -->
+
+/********** OFFRE **********/
 	 
 .photo {
-     width : 100%; 
-	 margin-top : 30px; 
+     width: 100%; 
+	 margin-top: 30px; 
 }
 	
 .photo img {
-	max-width : 100%; 
-	max-height : 100%; 
+	max-width: 100%; 
+	max-height: 100%; 
 }
-
- <!-- /* Titre et texte d'introduction de l'offre  */ -->	 
 
 .texte {
 	 text-align: center; 
-	 font-size : 20px;
-     margin-bottom : 40px; 	
-     margin-top : 30px; 	 
+	 font-size: 20px;
+     margin-bottom: 40px; 	
+     margin-top: 30px; 	 
 }	 
-	 	
+ 	
 .texte h2 {
-	
-	margin-bottom : 30px; 	
-    margin-top : 20px; 
+	margin-bottom: 30px; 	
+    margin-top: 20px; 
 }
-	
+
 .texte h3 {
-     font-size : 30px; 
-     margin-bottom : 30px; 	
-     margin-top : 20px; 
+     font-size: 30px; 
+     margin-bottom: 30px; 	
+     margin-top: 20px; 
 }
-	
-	 <!-- /* Avis clients  */ -->	 
+
+
+/********** AVIS CLIENTS **********/	 
 
 .textedeux {
      text-align: center; 
-	 font-size : 18px; 
-	 background-color :#9FB56D;
-     margin-bottom : 70px; 	
-     margin-top : 50px; 
+	 font-size: 18px; 
+	 background-color: #9FB56D;
+     margin-bottom: 70px; 	
+     margin-top: 50px; 
 }
 	 
 .textedeux h2 {
-	color : white;
-	margin-bottom:-25px;
+	color: white;
+	margin-bottom: -25px;
 }
-	
-	 <!-- /* Photos de profil  */ -->
+
+
+/********** PHOTOS DE PROFIL **********/
 	 
-.container  {
+.container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 1rem;
 }
-	
-	
+
 .photocontainer {
 	width: 300px;
 	height: 300px;
 	padding: 4rem;
 }
 
-.photocontainer img{
-	max-width:100%;
+.photocontainer img {
+	max-width: 100%;
 	height: 100%;
-	border-radius : 50%; 
+	border-radius: 50%; 
 }
 
- <!-- /* Couleure des étoiles  */ -->
-	 
+
+/********** ETOILES **********/
+
 .checked {
      color: #DFD831;
 }
