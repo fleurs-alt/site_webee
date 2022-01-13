@@ -3,19 +3,20 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Paiement - Don Olivar</title>
+	<title>Livraison - Don Olivar</title>
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
 	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/style.css"/>
-	<link rel="stylesheet" href="css/paiement.css"/>
+	<link rel="stylesheet" href="css/panier.css"/>
+	<link rel="stylesheet" href="css/livraison.css"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-
 <body>
+
 
 	<!-- Menu de navigation-->
 
@@ -65,119 +66,155 @@
 	<!-- Fin du menu de navigation-->
 	
 	
-	<!-- Titre page -->
+	
+	<!-- Livraison -->
+	
+		<!-- Titre page -->
 	
 		<div class="texteun">
 			<h1> Vos informations - Livraison - Paiement </h1> 
 		</div> 
 		
-	<!-- Moyens de paiement -->	
+			<!-- Mon panier -->
 	
-	<h2> Veuillez sélectionner un mode de paiement </h2>
-					
-		<div class="containerpaiement">
+	<h1 class="h1panier"> Récapitulatif de votre commande </h1>
 
-		<!-- Photo 1 -->
-			<div class="photocontainer">
-				<div class="wprock-img-zoom-hover">
-					<div class="wprock-img-zoom">
-						<img src="images/mastercard.png" loading=lazy alt="logo carte mastercard"> 
-					</div>
-				</div>
- 			</div>
+	<div class="shopping-cart">
 
-		<!-- Photo 2 -->
-			<div class="photocontainer">
-				<div class="wprock-img-zoom-hover">
-					<div class="wprock-img-zoom">
-						<img src="images/cb.jpg" loading=lazy alt="Logo carte bleue"> 
-					</div> 
-				</div>					   
-            </div>
-                 
-				 <!-- Photo 3 -->
-     
-	        <div class="photocontainer">
-            <div class="wprock-img-zoom-hover">	
-            <div class="wprock-img-zoom">
-                               
-							   <img src="images/visa.png" loading=lazy alt="Logo carte visa"> 
-            </div>
-            </div>
-		         
-				<!-- Photo 4-->
+		<div class="column-labels">
+			<label class="product-image">Image</label>
+			<label class="product-details">Product</label>
+			<label class="product-price">Prix</label>
+			<label class="product-quantity">Quantité</label>
+			<label class="product-removal">Supprimer</label>
+			<label class="product-line-price">Total</label>
+		</div>
 
-            <div class="photocontainer">
-            <div class="wprock-img-zoom-hover">
-            <div class="wprock-img-zoom">
-                               
-							<img src="images/paypal.png" loading=lazy alt="Logo paypal"> 
-          
-            </div>
-            </div>			  
-            </div>
-		    </div>
-            </div>
-			
-			    <!-- Bouton Confirmer -->
-		    
-			<div class="center">
-		                    <button class="btn success">Confirmer 
-		                    </button>
-		    </div>
-			
-		<!-- Ligne de séparation -->
-		<hr />
+		<div class="productpanier">
+			<div class="product-image">
+				<img class="huile" src="images/tapenade.png" alt="Tapenade" loading=lazy>
+		</div>
+		
+		<div class="product-details">
+			<div class="product-title">Tapenade de Vizcántar</div>
+			<p class="product-description">Tapenade fabriquée avec une excellente huile multivariétale protégée par l'appellation d'origine Priego de Córdoba, élaborée de manière artisanale, à partir d'olives récoltées à leur point de maturation optimal.</p>
+		</div>
+		<div class="product-price">9.99</div>
+		<div class="product-quantity">
+			<input type="number" value="2" min="1">
+		</div>
+			<div class="product-removal">
+				<button class="remove-product">
+				Supprimer
+				</button>
+			</div>
+		<div class="product-line-price">19.98</div>
+		</div>
+
+  <div class="productpanier">
+    <div class="product-image">
+      <img class="huile" src="images/pdthuile.jpg" alt="huile" loading=lazy>
+    </div>
+    <div class="product-details">
+      <div class="product-title">Huile aromatisée - ROMERO</div>
+      <p class="product-description">L'huile arbequina et les arômes naturels du romarin sont mélangés pour vous offrir une huile aromatique d'excellente qualité.
+
+</p>
+    </div>
+    <div class="product-price">14.99</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Supprimer
+      </button>
+    </div>
+    <div class="product-line-price">14.99</div>
+  </div>
+
+  <div class="totals">
+    <div class="totals-item">
+	  <div class="totals-value" id="cart-subtotal">34.97</div>
+      <p>Sous-total</p>
+    </div>
+    <div class="totals-item">
+      <div class="totals-value" id="cart-tax">1.37</div>
+	   <p>TVA (5,5%)</p>
+    </div>
+    <div class="totals-item">
+      <div class="totals-value" id="cart-shipping">15.00</div>
+	  <p>Livraison</p>
+    </div>
+    <div class="totals-item totals-item-total">
+      <div class="totals-value" id="cart-total">51.89</div>
+	  <p>Total TTC</p>
+    </div>
+  </div>
+      
+	</div>
+
+	<!-- Fin de mon panier -->
+
+  <!-- JAVASCRIPT -->
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="javascript/panier.js"></script>
+	
+	
+	<!-- Ligne de séparation -->
+	<hr />
 		  
-		<h2> Vos informations bancaires </h2>
+		<h2> Livraison </h2>
 					 
-			     <!-- Form 2 -->
-				 
 		<div class="un">
 	       
             <div class="droite">
-								   
- 				        <p> Nom du titulaire* </p>
-				  
-	                        <input type="text" placeholder= "Nom"/>
+			   
+				<p> Nom et prénom* </p>
+					<input type="text" placeholder= "Nom, prénom"/>
 	  
-	                    <p> Numéro de carte* </p>
-					  
-	                        <input type="text" placeholder= "Numéro de carte"/>
+				<p> Adresse de livraison* </p>
+					<input type="text" placeholder= "Numéro, rue"/>
+							
+				<p> Adresse ligne 2* </p>
+					<input type="text" placeholder= "Appartement, bâtiment, étage, etc."/>
+							
+				<p> Code postal* </p>
+					<input type="text" placeholder= "Indiquez votre code postal. Par exemple 31000"/>
+	
 	        </div>
 			    
 		    <div class="gauche">
 	       
-		                <p> Date d'expiration* </p>
-	
-	                        <input type="text" placeholder= "MM/AA"/>
-								 
-						<p> Cryptogramme* </p>
-					  
-	                        <input type="text" placeholder= "CVV"/>
-			</div>						
-									
-		</div>				
-		
-			<!-- Bouton Payer -->
-		    <div class="center">
-		                    <button class="btn success">Payer </button>
-			</div> 
-            
-			
-		        
-				
-				<!-- Ligne de séparation -->
-		   
-		        <hr />
-			    
-				<!-- Texte bas de page -->
-				
-				<div class="texteinfos">
-					     <p> Votre commande a bien été prise en compte. </p>
-                         <p>Merci pour votre achat. </p>
-				</div>
+				<p> Ville* </p>
+					<input type="text" placeholder= "Ville, localité"/>
+							
+				<p> Pays* </p>    
+					<input type="text" placeholder= ""/>
+					
+				<p> Adresse mail* </p>
+					<input type="text" placeholder= ""/>	
 
+				<p> Numéro de téléphone </p>
+					<input type="text" placeholder= ""/>
+								
+			</div>
+			
+		</div>	
+		
+		<!-- Bouton Payer -->
+		
+		<div class="center">
+			<form action="paiement.html">
+				<input type= "submit" id="payer" value="Payer">
+			</form>
+		</div>      					
+
+
+	
+	<!-- Fin de la partie Livraison-->	
+	
+	
 	<!-- Section avant footer -->
 	
 	<div class="avantfooter">
@@ -212,7 +249,7 @@
 	</div>
 	
 	<!-- Fin de la section avant footer -->
-	
+
 	
 	<!-- Footer -->
 	
@@ -268,7 +305,7 @@
 	</div>
 	
 	<!-- Fin du footer -->
-	
-					
+
+
 </body>
 </html>
