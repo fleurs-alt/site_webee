@@ -148,7 +148,6 @@ h2 {
 
 .gauche {
 	flex: 2;
-    margin-left: 40px; 
 	margin-right: 350px; 
 }
 
@@ -158,31 +157,25 @@ h2 {
 	margin-right: 10px;   	
 }
 
-.droite img {
-	width: 100px; 
-	height:auto;
-	margin-right: 10px;   	
-}
-
 .droite p {
     text-align: center;
     margin-bottom: 10px; 
     margin-top: 30px;
-    font-size: 20px;  	 
+    font-size: 18px;  	 
 }
 
 .gauche p {
     text-align: center;
     margin-bottom: 10px; 
     margin-top: 30px;
-    font-size: 20px;  	 
+    font-size: 18px;  	 
 }
 
 /********** REPONSES FORM 2 **********/
 
 input {
 	padding: 10px; 
-    font-size: 20px; 	
+    font-size: 14px; 	
 }
 
 
